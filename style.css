@@ -1,0 +1,102 @@
+@font-face {
+	src: url(fonts/woff/IRANSansWeb.woff);
+	font-family: "IRAN Sans";
+}
+* {
+	border: 0;
+	padding: 0;
+	margin: 0;
+	box-sizing: border-box;
+	-ms-box-sizing: border-box;
+	-moz-box-sizing: border-box;
+	-webkit-box-sizing: border-box;
+	-o-box-sizing: border-box;
+}
+html body {
+	font-family: "IRAN Sans";
+	background: #ff00cc;
+	/* fallback for old browsers */
+	background: -webkit-linear-gradient(to left, #333399, #ff00cc);
+	/* Chrome 10-25, Safari 5.1-6 */
+	background: linear-gradient(to left, #333399, #ff00cc);
+	/* W3C, IE 10+/ Edge, Firefox 16+, Chrome 26+, Opera 12+, Safari 7+ */
+}
+a:hover {
+	text-decoration: none !important;
+	color: white !important;
+}
+ul li {
+	list-style: none !important;
+}
+svg {
+	transition: all .9s cubic-bezier(.85, .12, .95, 1.27);
+}
+svg:hover {
+	filter: grayscale(10);
+	transition: all .9s cubic-bezier(.85, .12, .95, 1.27);
+}
+.navbar {
+	background: #ff00cc;
+	/* fallback for old browsers */
+	background: -webkit-linear-gradient(to left, #333399, #ff00cc);
+	/* Chrome 10-25, Safari 5.1-6 */
+	background: linear-gradient(to left, #333399, #ff00cc);
+	/* W3C, IE 10+/ Edge, Firefox 16+, Chrome 26+, Opera 12+, Safari 7+ */
+	color: white !important;
+}
+.nav-link {
+	font-size: 30px !important;
+	color: white !important;
+}
+.navbar a:hover {
+	text-decoration: underline;
+}
+.nav-item {
+	transition: all .9s cubic-bezier(.85, .12, .95, 1.27);
+}
+.nav-item img {
+	background-color: white;
+	border-radius: 10rem;
+}
+.nav-item a:hover {
+	transition: all .9s cubic-bezier(.85, .12, .95, 1.27);
+	background-color: #fff;
+	border-radius: 10rem;
+	color: purple !important;
+}
+.nav-buttons {
+	width: 55%;
+}
+.nav-buttons button {
+	font-size: 25px;
+	background-color: white !important;
+	color: purple;
+	padding: 4px;
+	border-radius: 10rem;
+	transition: all .9s cubic-bezier(.85, .12, .95, 1.27);
+}
+.nav-buttons button:hover {
+	background-color: transparent!important;
+	transition: all .9s cubic-bezier(.85, .12, .95, 1.27);
+	color: white;
+}
+.home-sec {
+	width: 100%;
+	height: auto;
+	margin-top: 1rem;
+}
+.home-sec h1 {
+	color: white;
+	margin-top: 3rem !important;
+	padding-top: 3rem;
+	position: relative;
+	text-align: center;
+	font-size: 50px;
+}
+.circle {
+	background-color: white;
+	color: black;
+	padding: 5rem;
+	position: static;
+	width: 50%;
+	text-align: center;
