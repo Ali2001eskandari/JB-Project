@@ -100,3 +100,178 @@ svg:hover {
 	position: static;
 	width: 50%;
 	text-align: center;
+		display: flex;
+	justify-content: center;
+	align-items: center;
+	margin: 0 auto !important;
+	box-shadow: 10px 10px 5px black;
+	margin: 3rem;
+	transform: scale(0.0000001);
+	opacity: 0;
+	font-size: 20px;
+	border-radius: 100%;
+	animation: circle .9s alternate both;
+	animation-timing-function: cubic-bezier(.68, .43, .59, .38);
+}
+/* circle animation */
+
+@keyframes circle {
+	0% {
+		transform: scale(0.0000001);
+		opacity: 0;
+	}
+	100% {
+		transform: scale(1);
+		opacity: 1;
+	}
+}
+.arrow {
+	position: relative;
+	right: 47%;
+	display: flex;
+	justify-content: center;
+	align-items: center;
+	color: black;
+	width: 2.5%;
+	margin: 1rem;
+	opacity: 0.5;
+}
+.arrow a:hover {
+	opacity: 1;
+	/* same animation */
+}
+.khad-sec {
+	width: 100%;
+	height: auto;
+}
+.khad-sec h3 {
+	text-align: center;
+	width: 100%;
+	font-size: 80px;
+	color: white;
+	padding-top: 5rem;
+	letter-spacing: 20px;
+}
+.khad-sec a button {
+	cursor: pointer;
+	transition: all .5s cubic-bezier(.85, .12, .95, 1.27);
+	border-radius: 100rem;
+	padding: 10px;
+	background-image: linear-gradient(to top, #e6e9f0 0%, #eef1f5 100%);
+	font-size: 25px;
+	box-shadow: 40px 40px 40px #3a3a3a;
+}
+.khad-sec a button:hover {
+	filter: brightness(1.1);
+	transition: all .5s cubic-bezier(.85, .12, .95, 1.27);
+	box-shadow: 0 0 0 rgba(0, 0, 0, 0.0);
+}
+.button-sec {
+	display: flex;
+	justify-content: center;
+	position: relative;
+	bottom: 10rem;
+}
+.img-khad-sec {
+	display: flex;
+	margin-top: 8rem;
+	justify-content: end;
+}
+.circle-khad-sec {
+	display: inline-block;
+	color: #fff !important;
+	box-shadow: -40px 40px 40px #3a3a3a;
+	font-size: 35px;
+	background-image: radial-gradient(circle 248px at center, #16d9e3 0%, #30c7ec 47%, #46aef7 100%);
+	color: purple;
+	position: relative;
+	top: -17rem;
+	width: 50%;
+	left: 70px;
+	border-radius: 1rem;
+	text-align: center;
+}
+.row {
+	margin-left: 0 !important;
+}
+.footer {
+	width: 100%;
+	height: auto;
+	background-color: white;
+	text-align: center;
+	border-radius: 5rem 5rem 0 0;
+}
+.col-sm-3 h3 {
+	color: purple;
+}
+.col-sm-3 li {
+	color: rebeccapurple;
+}
+.btnftr {
+	text-align: center;
+	font-size: 40px;
+	background: #ff00cc;
+	/* fallback for old browsers */
+	background: -webkit-linear-gradient(to left, #333399, #ff00cc);
+	/* Chrome 10-25, Safari 5.1-6 */
+	background: linear-gradient(to left, #333399, #ff00cc);
+	/* W3C, IE 10+/ Edge, Firefox 16+, Chrome 26+, Opera 12+, Safari 7+ */
+	color: white !important;
+	margin: 1rem;
+	border-radius: 10rem;
+	transition: all .5s cubic-bezier(.85, .12, .95, 1.27);
+}
+.btnftr:hover {
+	filter: opacity(0.8);
+	transition: all .5s cubic-bezier(.85, .12, .95, 1.27);
+}
+.btnftr a {
+	color: white;
+}
+.content ul li {
+	transition: all .2s cubic-bezier(.85, .12, .95, 1.27);
+}
+.content ul li:hover {
+	transition: all .2s cubic-bezier(.85, .12, .95, 1.27);
+	letter-spacing: 2px;
+}
+.copyright {
+	text-align: center;
+}
+/* lazy load */
+
+.slideanim {
+	visibility: hidden;
+}
+.slide {
+	/* The name of the animation */
+	animation-name: slide;
+	-webkit-animation-name: slide;
+	/* The duration of the animation */
+	animation-duration: 1s;
+	-webkit-animation-duration: 1s;
+	/* Make the element visible */
+	visibility: visible;
+}
+/* Go from 0% to 100% opacity (see-through) and specify the percentage from when to slide in the element along the Y-axis */
+
+@keyframes slide {
+	0% {
+		opacity: 0;
+		transform: scale(0.8);
+	}
+	100% {
+		opacity: 1;
+		transform: scale(1);
+	}
+}
+@-webkit-keyframes slide {
+	0% {
+		opacity: 0;
+		-webkit-transform: translateY(70%);
+	}
+	100% {
+		opacity: 1;
+		-webkit-transform: translateY(0%);
+	}
+}
